@@ -6,6 +6,10 @@ class App extends Component {
 
   componentDidMount(){
 
+    this.state = {
+      quote: ''
+    }
+
     /**
      * Url for the wordpress's quote api, it returns a random quote
      */
