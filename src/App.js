@@ -2,13 +2,15 @@ import React, { Component } from 'react';
 import QuoteGenerator from './quoteGenerator';
 import './App.css';
 
-class App extends React.Component {
+class App extends Component {
 
   constructor() {
     super();
     this.state = {
-      quote: ''
+      quote: '',
+      author: ''
     };
+    // Binding getRandomQuote to this
     this.getRandomQuote = this.getRandomQuote.bind(this);
   }
 
@@ -19,14 +21,16 @@ class App extends React.Component {
     let quoteUrl = "http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1";
 
     // Fetching the requested quote
-    fetch(quoteUrl).then(function(response){
-      if(response.ok){
-        // Converting response to json
-        response.json().then(function(json) {
-          console.log(json)
-        });
-      }
+    fetch(quoteUrl).then(response => {
+      return response.json();
     })
+    .then(jsonQuote => {
+      // Changing the state for both quote and author
+      this.setState({
+        quote: jsonQuote[0].content,
+        author: jsonQuote[0].title
+      })
+    });
   }
 
   componentDidMount(){
@@ -36,7 +40,7 @@ class App extends React.Component {
   render() {
     return (
       <div id="App">
-        <QuoteGenerator />
+        <QuoteGenerator content={this.state.quote} author={this.state.author}/>
       </div>
     );
   }
