@@ -8,7 +8,7 @@ class QuoteContainer extends Component{
                 {/* Used replace to remove any unnecessary html tags */}
                 <div id="text">{this.props.content.replace(/(<([^>]+)>)/ig,"")}</div>
                 <div id="author">{this.props.author}</div>
-                <button id="new-quote">New Quote</button>
+                
                 <a id="tweet-quote"></a>
             </section>
         )
