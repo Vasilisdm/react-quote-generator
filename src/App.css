@@ -10,7 +10,11 @@
   justify-content: center;
 }
 
+#text ,
+#author {
+  margin-bottom: 0.83rem;
+}
+
 #text {
   text-align: justify;
-  margin-bottom: 0.83rem;
 }
