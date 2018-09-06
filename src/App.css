@@ -4,3 +4,8 @@
   align-items: center;
   max-width: 420px;   
 }
+
+#quote-box {
+  display: flex;
+  justify-content: center;
+}
