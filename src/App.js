@@ -42,7 +42,7 @@ class App extends Component {
     return (
       <div id="App">
         <QuoteContainer content={this.state.quote} author={this.state.author}/>
-        <QuoteGeneratorBtn />
+        <QuoteGeneratorBtn generateQuote={this.getRandomQuote}/>
       </div>
     );
   }
