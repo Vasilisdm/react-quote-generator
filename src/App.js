@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import QuoteContainer from './components/quoteContainer';
+import QuoteContainer from './components/QuoteContainer';
 import './App.css';
 
 class App extends Component {
