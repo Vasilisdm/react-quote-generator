@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class QuoteGenerator extends Component{
+class QuoteContainer extends Component{
     render(){
         return(
             <section className="quote-generator-container">
@@ -15,4 +15,4 @@ class QuoteGenerator extends Component{
     }
 }
 
-export default QuoteGenerator;
+export default QuoteContainer;
