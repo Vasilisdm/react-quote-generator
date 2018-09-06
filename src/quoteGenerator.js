@@ -5,7 +5,8 @@ class QuoteGenerator extends Component{
         return(
             <section className="quote-generator-container">
                 <h1 className="quote-generator-heading">Quote Generator</h1>
-                <div id="text">{this.props.content}</div>
+                {/* Used replace to remove any unnecessary html tags */}
+                <div id="text">{this.props.content.replace(/(<([^>]+)>)/ig,"")}</div>
                 <div id="author">{this.props.author}</div>
                 <button id="new-quote"></button>
                 <a id="tweet-quote"></a>
