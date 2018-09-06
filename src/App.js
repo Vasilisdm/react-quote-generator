@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import QuoteGenerator from './components/quoteGenerator';
+import QuoteContainer from './components/quoteContainer';
 import './App.css';
 
 class App extends Component {
@@ -40,7 +40,7 @@ class App extends Component {
   render() {
     return (
       <div id="App">
-        <QuoteGenerator content={this.state.quote} author={this.state.author}/>
+        <QuoteContainer content={this.state.quote} author={this.state.author}/>
       </div>
     );
   }
