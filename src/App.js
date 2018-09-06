@@ -4,15 +4,15 @@ import './App.css';
 
 class App extends React.Component {
 
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
     this.state = {
       quote: ''
     };
+    this.getRandomQuote = this.getRandomQuote.bind(this);
   }
 
-  componentDidMount(){
-    let that = this;
+  getRandomQuote(){
     /**
      * Url for the wordpress's quote api, it returns a random quote
      */
@@ -23,15 +23,14 @@ class App extends React.Component {
       if(response.ok){
         // Converting response to json
         response.json().then(function(json) {
-          // Updating state of quote
-          that.setState({
-            quote: json
-          });
-          console.log(that.state.quote)
+          console.log(json)
         });
       }
     })
+  }
 
+  componentDidMount(){
+     this.getRandomQuote();
   }
 
   render() {
