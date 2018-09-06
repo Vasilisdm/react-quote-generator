@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import QuoteContainer from './components/QuoteContainer';
+import QuoteGeneratorBtn from './components/QuoteGeneratorBtn';
 import './App.css';
 
 class App extends Component {
@@ -41,6 +42,7 @@ class App extends Component {
     return (
       <div id="App">
         <QuoteContainer content={this.state.quote} author={this.state.author}/>
+        <QuoteGeneratorBtn />
       </div>
     );
   }
