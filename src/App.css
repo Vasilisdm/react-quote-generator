@@ -9,3 +9,8 @@
   display: flex;
   justify-content: center;
 }
+
+#text {
+  text-align: justify;
+  margin-bottom: 0.83rem;
+}
