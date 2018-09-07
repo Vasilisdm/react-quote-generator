@@ -4,7 +4,9 @@ class QuoteTweetBtn extends Component{
     render(){
         return(
             <section className="tweet-btn-container">
-                <a id="tweet-quote" href="#">Tweet</a>
+                <a id="tweet-quote" rel="noopener noreferrer" 
+                className="twitter-share-button" 
+                href="https://twitter.com/intent/tweet">Tweet</a>
             </section>
         )
     }
