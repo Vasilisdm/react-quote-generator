@@ -5,7 +5,8 @@
   max-width: 420px;   
 }
 
-#quote-box {
+#quote-box,
+.quote-btn-container {
   display: flex;
   justify-content: center;
 }
