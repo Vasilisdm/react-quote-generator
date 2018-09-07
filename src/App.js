@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import QuoteContainer from './components/QuoteContainer';
 import QuoteGeneratorBtn from './components/QuoteGeneratorBtn';
+import QuoteTweetBtn from './components/QuoteTweetBtn';
 import './App.css';
 
 class App extends Component {
@@ -42,7 +43,10 @@ class App extends Component {
     return (
       <div id="App">
         <QuoteContainer content={this.state.quote} author={this.state.author}/>
-        <QuoteGeneratorBtn generateQuote={this.getRandomQuote}/>
+        <section className="buttons-container">
+          <QuoteGeneratorBtn generateQuote={this.getRandomQuote}/>
+          <QuoteTweetBtn />
+        </section>
       </div>
     );
   }
