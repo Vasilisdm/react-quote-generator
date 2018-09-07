@@ -11,6 +11,12 @@
   justify-content: center;
 }
 
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
 #text ,
 #author {
   margin-bottom: 0.83rem;
