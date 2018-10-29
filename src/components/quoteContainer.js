@@ -13,7 +13,7 @@ class QuoteContainer extends Component{
         let { content, author } = this.props;
         return(
             <section className="quote-generator-container">
-                <h1 className="quote-generator-heading">Quote Generator</h1>
+                <h1 className="quote-generator-heading">Random Quote Generator</h1>
                 {/* Used replace to remove any unnecessary html tags */}
                 <div id="text">{this.decodeHtml(content.replace(/(<([^>]+)>)/ig,""))}</div>
                 <div id="author"><span className="author-text">Author:</span> {this.decodeHtml(author)}</div>
