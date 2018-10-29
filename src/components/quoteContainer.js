@@ -16,7 +16,7 @@ class QuoteContainer extends Component{
                 <h1 className="quote-generator-heading">Quote Generator</h1>
                 {/* Used replace to remove any unnecessary html tags */}
                 <div id="text">{this.decodeHtml(content.replace(/(<([^>]+)>)/ig,""))}</div>
-                <div id="author">{this.decodeHtml(author)}</div>
+                <div id="author"><span className="author-text">Author:</span> {this.decodeHtml(author)}</div>
             </section>
         )
     }
