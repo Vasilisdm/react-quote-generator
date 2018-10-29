@@ -34,6 +34,19 @@
   text-decoration: underline;
 }
 
+.tweet-btn-container {
+  padding: 5px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px #888;
+}
+
+.tweet-btn-container a{
+  color:#000;
+  text-decoration: none;
+  font-size: 13px;
+}
+
 #App {
   background-color: #ADD8E6;
   padding: 10px;
