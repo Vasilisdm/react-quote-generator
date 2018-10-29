@@ -25,3 +25,10 @@
 #text {
   text-align: center;
 }
+
+#App {
+  background-color: #ADD8E6;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px #999;
+}
