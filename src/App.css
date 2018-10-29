@@ -44,7 +44,17 @@
 .tweet-btn-container a{
   color:#000;
   text-decoration: none;
-  font-size: 13px;
+  font-size: 12px;
+}
+
+#new-quote {
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px #888;
+  font-size: 12px;
+}
+
+#new-quote:focus {
+  outline: none;
 }
 
 #App {
