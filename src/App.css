@@ -30,6 +30,10 @@
   font-weight: bold;
 }
 
+.quote-generator-heading{
+  text-decoration: underline;
+}
+
 #App {
   background-color: #ADD8E6;
   padding: 10px;
